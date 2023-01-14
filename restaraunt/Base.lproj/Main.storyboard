@@ -64,7 +64,7 @@
             </objects>
             <point key="canvasLocation" x="-309" y="8"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Restoranlar-->
         <scene sceneID="BEM-sB-uaR">
             <objects>
                 <tableViewController id="FBb-zs-DHV" sceneMemberID="viewController">
@@ -73,11 +73,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="e7m-sI-Dvp">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="202" id="e7m-sI-Dvp">
+                                <rect key="frame" x="0.0" y="50" width="393" height="202"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e7m-sI-Dvp" id="nPz-yg-8wx">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="202"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -87,10 +87,29 @@
                             <outlet property="delegate" destination="FBb-zs-DHV" id="gQq-Dh-AuL"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Restoranlar" id="DON-6d-1qq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k3I-cQ-DON" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="506" y="-42"/>
+            <point key="canvasLocation" x="1081.679389312977" y="7.746478873239437"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YYh-1U-NLS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dg1-Sv-lxe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NKM-X5-HdZ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FBb-zs-DHV" kind="relationship" relationship="rootViewController" id="lG6-fi-huO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bnw-WM-3sC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351.90839694656489" y="7.746478873239437"/>
         </scene>
     </scenes>
     <resources>
